@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+        <link rel="stylesheet" href="css/estilo.css">
+        <script src="js/escript.js"></script>
+        <title>Trabalho</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Cadastro de Novos Usuários:</h1>
+            <form id="cadastro" method="POST" action="view/pagina1.php">
+                <h2>Dados Pessoais</h2>
+                <div class="form-group">
+                    <label for="nome">
+                    Nome Completo:
+                    </label>
+                    <input type="text" autofocus required name="nome" id="nome"/>
+                </div>
+                <div class="form-group">
+                    <label for="endereco">
+                        Endereço:
+                    </label>
+                    <input type="text" required name="endereco" id="endereco"/>
+                </div>
+                <div class="form-group">
+                    <label for="cidade">
+                        Cidade:
+                    </label>
+                    <input type="text" required name="cidade" id="cidade"/>
+                </div>
+                <div class="form-group">
+                    <label for="estado">
+                        Estado:
+                    </label>
+                    <select name="estado" id="estado" required>
+                        <option value="">Selecione</option>
+                        <option value="Rio de Janeiro">Rio de Janeiro</option>
+                        <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                        <option value="Paraná">Paraná</option>
+                        <option value="Santa Catarina">Santa Catarina</option>
+                        <option value="São Paulo">São Paulo</option>
+                        <option value="Paraíba">Paraíba</option>
+                        <option value="Sergipe">Sergipe</option>
+                        <option value="Minas Gerais">Minas Gerais</option>
+                        <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                        <option value="Mato Grosso">Mato Grosso</option>
+                    </select>
+                </div>
+                <h2>Dados de Sistema</h2>
+                <div class="form-group">
+                    <label for="usuario">
+                        Nome de Usuário:
+                    </label>
+                    <input type="text" required id="usuario" name="usuario" />
+                </div>
+                <div class="form-group">                
+                    <label for="senha">
+                        Senha:
+                    </label>
+                    <input type="password" required id="senha" name="senha"/>
+                </div>
+                <div class="form-group">
+                    <label for="confirmeASenha">
+                        Confirme a Senha:
+                    </label>
+                    <input type="password" required id="confirmeASenha" name="confirmeASenha" />
+                </div>
+                <div class="botao">
+                    <input type="submit" onclick="testeSenha()" value="Cadastrar Usuário"/> 
+                </div>
+            </form>
+        </div>
+        
+    </body>
+
+</html>
